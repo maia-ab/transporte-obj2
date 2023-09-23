@@ -8,13 +8,4 @@ public class Autobus extends Transporte{
 	}
 	
 	
-	@Override
-	public void agregarPasajero(String nuevoPasajero) {
-		if(super.pasajerosABordo < 20){
-			super.pasajerosABordo ++;
-			super.listaDePasajeros[super.pasajerosABordo - 1] = nuevoPasajero;
-		}
-		
-	}
-	
 }

@@ -7,14 +7,6 @@ public class Automovil extends Transporte{
 	}
 	
 	
-	@Override
-	public void agregarPasajero(String nuevoPasajero) {
-		if(super.pasajerosABordo < 3){
-			super.pasajerosABordo ++;
-			super.listaDePasajeros[super.pasajerosABordo - 1] = nuevoPasajero;
-		}
-		
-	}
 	
 }
 

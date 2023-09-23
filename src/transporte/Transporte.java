@@ -34,6 +34,11 @@ public abstract class Transporte {
 		}		
 	}
 
-	abstract public void agregarPasajero(String nuevoPasajero);
+	public void agregarPasajero(String nuevoPasajero){
+		if (this.pasajerosABordo < this.listaDePasajeros.length){
+			this.pasajerosABordo ++;
+			this.listaDePasajeros[this.pasajerosABordo - 1] = nuevoPasajero;
+		}		
+	}
 
 }
